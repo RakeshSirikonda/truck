@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "138458534553-fmcabqou8ibco9cc73c5cr7p5d618hea.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.truck",
+            "certificate_hash": "89f6374cc8f1c9461fa6cd11e9d8496a41901152"
+          }
+        },
+        {
           "client_id": "138458534553-cmfhogdn4pttemmvp2oo3cah9efcj3if.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -6,8 +6,6 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:truck/screens/homeScreen.dart';
 import 'package:truck/screens/otpInput.dart';
 
-
-
 class OTPScreen extends StatefulWidget {
   final String mobileNumber;
   OTPScreen({
@@ -56,41 +54,40 @@ class _OTPScreenState extends State<OTPScreen> {
             Navigator.pop(context);
           },
         ),
-      
       ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             PreferredSize(
-          child: Container(
-            padding: EdgeInsets.only(left: 16.0, bottom: 16, top: 16),
-            color: Colors.white,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+              child: Container(
+                padding: EdgeInsets.only(left: 16.0, bottom: 16, top: 16),
+                color: Colors.white,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text(
-                      "Verify Details",
-                      style: TextStyle(
-                          fontSize: 22.0, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      height: 8,
-                    ),
-                    Text(
-                      "OTP sent to ${widget.mobileNumber}",
-                      style: TextStyle(
-                          fontSize: 16.0, fontWeight: FontWeight.bold),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          "Verify Details",
+                          style: TextStyle(
+                              fontSize: 22.0, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "OTP sent to ${widget.mobileNumber}",
+                          style: TextStyle(
+                              fontSize: 16.0, fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ],
                 ),
-              ],
+              ),
+              preferredSize: Size.fromHeight(100),
             ),
-          ),
-          preferredSize: Size.fromHeight(100),
-        ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: PinInputTextField(
@@ -170,8 +167,8 @@ class _OTPScreenState extends State<OTPScreen> {
               context,
               MaterialPageRoute(
                 builder: (context) => HomeScreen(
-                  // user: value.user,
-                ),
+                    // user: value.user,
+                    ),
               ),
               (Route<dynamic> route) => false);
         } else {
@@ -228,9 +225,7 @@ class _OTPScreenState extends State<OTPScreen> {
         Navigator.pushAndRemoveUntil(
             context,
             MaterialPageRoute(
-              builder: (context) => HomeScreen(
-               
-              ),
+              builder: (context) => HomeScreen(),
             ),
             (Route<dynamic> route) => false);
       } else {
@@ -239,4 +234,5 @@ class _OTPScreenState extends State<OTPScreen> {
     }).catchError((error) {
       showToast("Something went wrong", Colors.red);
     });
-  }}
+  }
+}
