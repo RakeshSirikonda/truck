@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "138458534553",
+    "firebase_url": "https://truck-41c31.firebaseio.com",
+    "project_id": "truck-41c31",
+    "storage_bucket": "truck-41c31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138458534553:android:4c64b2011294ffc8979e08",
+        "android_client_info": {
+          "package_name": "com.example.truck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138458534553-cmfhogdn4pttemmvp2oo3cah9efcj3if.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiGZ5a7RSsN_Dsi_79EjHKXdbnr_unAtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138458534553-cmfhogdn4pttemmvp2oo3cah9efcj3if.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
