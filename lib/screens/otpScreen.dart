@@ -56,9 +56,14 @@ class _OTPScreenState extends State<OTPScreen> {
             Navigator.pop(context);
           },
         ),
-        bottom: PreferredSize(
+      
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            PreferredSize(
           child: Container(
-            padding: EdgeInsets.only(left: 16.0, bottom: 16, top: 4),
+            padding: EdgeInsets.only(left: 16.0, bottom: 16, top: 16),
             color: Colors.white,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -86,10 +91,6 @@ class _OTPScreenState extends State<OTPScreen> {
           ),
           preferredSize: Size.fromHeight(100),
         ),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: PinInputTextField(
